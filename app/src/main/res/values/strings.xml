@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">fridgeapp</string>
+    <string name="some_id">"Привет, давай познакомимся поближе!"</string>
+
 </resources>

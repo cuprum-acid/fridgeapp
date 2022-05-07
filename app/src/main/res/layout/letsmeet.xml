@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/darkback"
+    >
+
+
+    <ImageView
+        android:id="@+id/rectangle_2"
+        android:layout_width="322dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="254dp"
+        android:layout_height="108dp"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal|top"
+        android:text="Привет, давай познакомимся поближе!"
+        android:textAppearance="@style/some_id"
+        android:textFontWeight="500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="365dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/some_id"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="364dp"
+            android:layout_height="367dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.007" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="219dp"
+            android:layout_height="271dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <CheckBox
+                android:id="@+id/celi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="целиакия" />
+
+            <CheckBox
+                android:id="@+id/lacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="непереносимость лактозы" />
+
+            <CheckBox
+                android:id="@+id/diabet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="диабет" />
+
+            <CheckBox
+                android:id="@+id/vegetarian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="вегетарианец" />
+
+            <CheckBox
+                android:id="@+id/vegan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="веган" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="283dp"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:text="У тебя есть особенности питания?"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+            app:layout_constraintVertical_bias="0.615" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="73dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Нет"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_2"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

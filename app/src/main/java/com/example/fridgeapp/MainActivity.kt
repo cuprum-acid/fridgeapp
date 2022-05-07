@@ -7,6 +7,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
@@ -36,6 +37,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnChoosePicture:Button
     private val CAMERA_PERMISSION_CODE=123
     private val STORAGE_PERMISSION_CODE=113
+    var holodilnick = "space"
+    var chenapolke : ArrayList<String> = arrayListOf()
+    var chechetam = "space"
 
     private val TAG="MyTag"
 
@@ -125,8 +129,18 @@ class MainActivity : AppCompatActivity() {
 
                 for (label in it) {
                     //val text = label.text
-                    result=result+"\n"+label.text
+                    holodilnick = label.text.toString()
+                    if ("Fruit" in holodilnick.substringBefore(',')||"Food" in holodilnick.substringBefore(',')||"Meat" in holodilnick.substringBefore(',')||"Chicken" in holodilnick.substringBefore(',')||"Vegetable" in holodilnick.substringBefore(',')||"Eggs" in holodilnick.substringBefore(',')||"Egg" in holodilnick.substringBefore(',')||"Bread" in holodilnick.substringBefore(',')||"Fish" in holodilnick.substringBefore(',')) {
+
+                        result = result + "\n" + label.text
+                        chenapolke.add(label.text)
+                        //print(chenapolke)
+                    }
                 }
+                val catSet = chenapolke.toSet()
+                chechetam=catSet.toString().drop(1).dropLast(1)
+                val spisok=findViewById<TextView>(R.id.spisochek)
+                spisok.setText(chechetam)
 
                 tvResult.text=result
 

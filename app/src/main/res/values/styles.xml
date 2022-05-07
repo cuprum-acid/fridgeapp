@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="some_id">
+        <item name="fontFamily">@font/avenirnext</item>
+        <item name="android:textSize">30sp</item>
+
+        <item name="android:textColor">#FFFFFF        </item>
+
+        <item name="android:shadowColor">
+            #40000000
+        </item>
+    </style>
+
+
+</resources>
