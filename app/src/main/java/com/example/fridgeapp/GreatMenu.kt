@@ -25,13 +25,13 @@ class GreatMenu : Activity() {
 
         val bs = findViewById<ImageView>(R.id.breadsoup)
         bs.setOnClickListener{
-            val randomIntent = Intent(this, Recept::class.java)
+            val randomIntent = Intent(this, ReceptSoup::class.java)
             startActivity(randomIntent)
         }
 
         val o = findViewById<ImageView>(R.id.omlet)
         o.setOnClickListener{
-            val randomIntent = Intent(this, Recept::class.java)
+            val randomIntent = Intent(this, ReceptOmlet::class.java)
             startActivity(randomIntent)
         }
     }
