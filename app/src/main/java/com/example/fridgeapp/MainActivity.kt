@@ -118,6 +118,12 @@ class MainActivity : AppCompatActivity() {
             })
             builder.show()
         }
+
+        val scan = findViewById<ImageView>(R.id.arrowback)
+        scan.setOnClickListener{
+            val randomIntent = Intent(this, GreatMenu::class.java)
+            startActivity(randomIntent)
+        }
     }
 
     private fun processImage(){
