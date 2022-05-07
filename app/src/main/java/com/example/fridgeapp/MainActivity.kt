@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var ivPicture:ImageView
     lateinit var tvResult:TextView
-    lateinit var btnChoosePicture:Button
+    lateinit var btnChoosePicture:ImageView
     private val CAMERA_PERMISSION_CODE=123
     private val STORAGE_PERMISSION_CODE=113
     var holodilnick = "space"

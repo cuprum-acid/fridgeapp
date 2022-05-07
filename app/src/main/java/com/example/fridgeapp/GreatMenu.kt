@@ -16,6 +16,24 @@ class GreatMenu : Activity() {
             val randomIntent = Intent(this, MainActivity::class.java)
             startActivity(randomIntent)
         }
+
+        val ceaser = findViewById<ImageView>(R.id.ceaser)
+        ceaser.setOnClickListener{
+            val randomIntent = Intent(this, Recept::class.java)
+            startActivity(randomIntent)
+        }
+
+        val bs = findViewById<ImageView>(R.id.breadsoup)
+        bs.setOnClickListener{
+            val randomIntent = Intent(this, Recept::class.java)
+            startActivity(randomIntent)
+        }
+
+        val o = findViewById<ImageView>(R.id.omlet)
+        o.setOnClickListener{
+            val randomIntent = Intent(this, Recept::class.java)
+            startActivity(randomIntent)
+        }
     }
 
 
